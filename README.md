@@ -14,7 +14,7 @@ You need Arduino-keyboard.hex flashed onto your Uno in order for the Uno to appe
 
 Procedure to update:
 1. Touch the two pins together on your Uno to put it in dfu mode 
-(flipUno.jpg)
+![flipUno](flipUno.jpg)
 2. Flash the Arduino-usbserial-uno.hex with a [dfu-programmer] (https://sourceforge.net/projects/dfu-programmer/files/dfu-programmer/) or [flip] (https://www.microchip.com/developmenttools/ProductDetails/PartNo/flip#additional-summary) 
 3. Unplug and replugin the Uno.
 4. Then you can upload your sketch to your Uno using Arduino.
