@@ -13,5 +13,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: make
-      run: make
+    - name: AVR make
+    - uses: bazhenov/action-avr-make@v1.0
