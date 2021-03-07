@@ -9,7 +9,23 @@ Both were linked with LUFA version 100807. So that is included as well.
  * http://fourwalledcubicle.com/LUFA.php (version 100807)
  * https://anhnguyen.me/2014/01/turn-arduino-uno-r3-into-a-mouse/
 
-Arduino-usbserial-uno.hex is used to revert the arduino uno back into usb serial mode so you can upload sketches to the unit.
+You need Arduino-usbserial-uno.hex flashed onto your Uno in order to use the Arduino programmer to upload new sketches.
+You need Arduino-keyboard.hex flashed onto your Uno in order for the Uno to appear and behave as a mouse.
+
+Procedure to update:
+1. Touch the two pins together on your Uno to put it in dfu mode 
+(flipUno.jpg)
+2. Flash the Arduino-usbserial-uno.hex with a [dfu-programmer] (https://sourceforge.net/projects/dfu-programmer/files/dfu-programmer/) or [flip] (https://www.microchip.com/developmenttools/ProductDetails/PartNo/flip#additional-summary) 
+3. Unplug and replugin the Uno.
+4. Then you can upload your sketch to your Uno using Arduino.
+5. Unplug and replugin the Uno.
+6. Touch the two pins together on your Uno to put it in dfu mode 
+7. Flash the Arduino-keyboard.hex with a [dfu-programmer] (https://sourceforge.net/projects/dfu-programmer/files/dfu-programmer/) or [flip] (https://www.microchip.com/developmenttools/ProductDetails/PartNo/flip#additional-summary) 
+
+
+Arduino-usbserial-uno.hex is used to revert the arduino uno back into usb serial mode (original factory mode) so you can upload sketches to the unit.
+
+
 
 I wanted to create a fake keyboard that could be programmed to type essentially continusouly while attached. But I wanted it to appear as a USB HID device that spoofs a popular keyboard, rather than identifying as an Arduino keyboard.
 You can find a product to spoof, on your mac, by running this command:
