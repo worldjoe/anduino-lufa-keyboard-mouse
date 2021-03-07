@@ -13,7 +13,8 @@ Arduino-usbserial-uno.hex is used to revert the arduino uno back into usb serial
 
 I wanted to create a fake keyboard that could be programmed to type essentially continusouly while attached. But I wanted it to appear as a USB HID device that spoofs a popular keyboard, rather than identifying as an Arduino keyboard.
 You can find a product to spoof, on your mac, by running this command:
-```system_profiler SPUSBDataType
+```
+system_profiler SPUSBDataType
 Apple External Keyboard :
 
           Product ID: 0x0340
