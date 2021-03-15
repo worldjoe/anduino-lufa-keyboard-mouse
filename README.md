@@ -18,12 +18,12 @@ You need Arduino-keyboard.hex flashed onto your Uno in order for the Uno to appe
 Procedure to update:
 1. Touch the two pins together on your Uno to put it in dfu mode 
 ![flipUno](flipUno.jpg)
-2. Flash the Arduino-usbserial-uno.hex with a [dfu-programmer] (https://sourceforge.net/projects/dfu-programmer/files/dfu-programmer/) or [flip] (https://www.microchip.com/developmenttools/ProductDetails/PartNo/flip#additional-summary) 
+2. Flash the Arduino-usbserial-uno.hex with a [dfu-programmer](https://sourceforge.net/projects/dfu-programmer/files/dfu-programmer/) or [flip](https://www.microchip.com/developmenttools/ProductDetails/PartNo/flip#additional-summary) 
 3. Unplug and replugin the Uno.
 4. Then you can upload your sketch to your Uno using Arduino.
 5. Unplug and replugin the Uno.
 6. Touch the two pins together on your Uno to put it in dfu mode 
-7. Flash the Arduino-keyboard.hex with a [dfu-programmer] (https://sourceforge.net/projects/dfu-programmer/files/dfu-programmer/) or [flip] (https://www.microchip.com/developmenttools/ProductDetails/PartNo/flip#additional-summary) 
+7. Flash the Arduino-keyboard.hex with a [dfu-programmer](https://sourceforge.net/projects/dfu-programmer/files/dfu-programmer/) or [flip](https://www.microchip.com/developmenttools/ProductDetails/PartNo/flip#additional-summary) 
 
 
 Arduino-usbserial-uno.hex is used to revert the arduino uno back into usb serial mode (original factory mode) so you can upload sketches to the unit.
@@ -49,8 +49,8 @@ Apple External Keyboard :
           Built-In: Yes
 ```
 You can take that Product ID, Vendor ID and the identification string, "Apple External Keyboard" and replace those lines here:
-https://github.com/worldjoe/arduino-lufa-keyboard-mouse/blob/main/Projects/arduino-keyboard-0.3/Descriptors.c#L98
-https://github.com/worldjoe/arduino-lufa-keyboard-mouse/blob/main/Projects/arduino-keyboard-0.3/Descriptors.c#L186:#L188
+* https://github.com/worldjoe/arduino-lufa-keyboard-mouse/blob/main/Projects/arduino-keyboard-0.3/Descriptors.c#L98
+* https://github.com/worldjoe/arduino-lufa-keyboard-mouse/blob/main/Projects/arduino-keyboard-0.3/Descriptors.c#L186:#L188
 
 You can also lookup Vendor ID / Product IDs here: https://www.the-sz.com/products/usbid/index.php
 That site also has information on how to gather the IDs from a windows pc.
