@@ -1,3 +1,6 @@
+[![C/C++ CI](https://github.com/worldjoe/arduino-lufa-keyboard-mouse/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/worldjoe/arduino-lufa-keyboard-mouse/actions/workflows/c-cpp.yml)
+[![SimpleBuild](https://github.com/worldjoe/arduino-lufa-keyboard-mouse/actions/workflows/main.yml/badge.svg)](https://github.com/worldjoe/arduino-lufa-keyboard-mouse/actions/workflows/main.yml)
+
 # arduino-lufa-keyboard-mouse
 Arduino KeyBoard and Mouse drivers
 
