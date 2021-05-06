@@ -12,6 +12,7 @@
  */
 /* Keyboard usage values, see usb.org's HID-usage-tables document, chapter
  * 10 Keyboard/Keypad Page for more codes.
+ https://www.usb.org/sites/default/files/hut1_21_0.pdf#page83
  */
 #define MOD_CONTROL_LEFT    (1<<0)
 #define MOD_SHIFT_LEFT      (1<<1)
@@ -168,7 +169,7 @@ void loop()
 		int sChar=0x16;
 		int dChar=0x07;
 		int wChar=0x1A;
-		int randomChar = random(0x4, 0x28);
+		int randomChar = random(0x4, 0x1D);
 
 		buf[0] = 0;
 		buf[2] = randomChar;    // Random character
